@@ -1,0 +1,197 @@
+/*
+ * Daily
+ */
+
+/*
+ * Contents
+ *
+ * Font faces
+ * Container
+ * Hero Unit
+ * Site navigation
+ * Site footer
+ * Posts Collection
+ * Post
+ */
+
+/*
+ * Font faces
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+
+
+/*
+ * Container
+ */
+
+.main-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/*
+ * Hero Unit
+ *
+ * Where logo happened...
+ */
+
+.hero {
+  height: 150px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.75em;
+  font-weight: 100;
+  letter-spacing: .1em;;
+  font-family: 'Roboto', sans-serif;
+  color: #777;
+}
+
+/*
+ * Site navigation
+ */
+.nav-list {
+  border-top: 1px solid #e3e3e3;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0;
+  margin-right: 15px;
+  padding: 15px 0;
+  font-size: 1.2em;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #666;
+}
+
+.nav-item a:hover {
+  color: #333;
+}
+
+.nav-item.active a {
+  color: #333;
+}
+
+
+/*
+ * Site footer
+ */
+.site-footer {
+  margin: 50px 0 10px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: .95em;
+}
+
+.site-footer .special {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 1em;
+  color: #777;
+}
+
+.site-footer .special:hover {
+  color: #cb3f20;
+}
+
+.site-footer a {
+  display: inline-block;
+  padding: 0 5px;
+  color: #999;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/*
+ * Posts Collection
+ */
+
+.posts-row {
+  margin: 15px 0;
+}
+
+.posts-row:first-child {
+  margin-top: 0;
+}
+
+.posts-row:last-child {
+  margin-bottom: 0;
+}
+
+.post-card {
+  position: relative;
+  height: 350px;
+}
+
+.post-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.post-meta {
+  position: absolute;
+  padding: 15px 25px;
+  bottom: 0;
+  left: 2%;
+}
+
+.post-meta .post-title {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: .1em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.post-meta .post-author {
+  margin: 0;
+  margin-top: 5px;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  letter-spacing: .1em;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.post-author {
+  text-decoration: none;
+}
+
+.post-author:hover {
+  text-decoration: underline;
+}
+
+
+/*
+ * Post
+ */
