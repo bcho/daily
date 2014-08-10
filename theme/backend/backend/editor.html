@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor | Daily </title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="medium-editor/dist/css/medium-editor.min.css">
+    <link rel="stylesheet" href="medium-editor/dist/css/themes/default.min.css">
+</head>
+<body>
+    <div class="editor-container">
+        <header class="editor-header">
+            <div class="editor-title post-title" contenteditable>hello world</div>
+        </header>
+        <aside class="editor-toolbar"></aside>
+        <article class="editor-content post-content post-editor">foobar</article>
+    </div>
+</body>
+<script src="medium-editor/dist/js/medium-editor.min.js"></script>
+<script>
+    (function () {
+        var editorElem = document.querySelector('.post-editor'),
+            editor = new MediumEditor(editorElem);
+    })();
+</script>
+</html>

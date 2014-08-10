@@ -1,0 +1,30 @@
+{
+  "name": "daily-backend",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bcho/daily",
+  "authors": [
+    "hbc <bcxxxxxx@gmail.com>"
+  ],
+  "description": "Backend theme for daily.",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "daily",
+    "frameworks",
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "medium-editor": "~1.9.0",
+    "bootstrap": "~3.2.0"
+  }
+}
