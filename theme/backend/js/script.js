@@ -8,30 +8,32 @@ $(document).ready(function(){
   // upload image
   $("#upload-img").change(function(event) {
     // create temporary url
-    var tmppath = window.URL.createObjectURL(event.target.files[0]);
-    var img_address = $(this).val();
-    console.log(img_address);
+    var tmpPath = window.URL.createObjectURL(event.target.files[0]);
+    var imgAddress = $(this).val();
+    console.log(imgAddress);
     // if upload image
-    if (img_address!== null) {
+    if (imgAddress!== null) {
       // set background, show image
-      $("#background").css("background-image", 'url("' + tmppath + '")');
-      $("#image").removeClass("hide");
-      $("#image").addClass("show");
+      $("#background").css("background-image", 'url("' + tmpPath + '")');
+      $("#image").removeClass("hide").addClass("show");
       // change font color
       $("#editable").addClass("darken");
+      // change button position
+      $("#btn").addClass("btn-moveDown");
     }
   });
   // delete image
   $("#btn-delete").click(function(e) {
     e.preventDefault();
-    var img_address = $("#upload-img").val();
+    var imgAddress = $("#upload-img").val();
     // if image exists
-    if (img_address!== null) {
+    if (imgAddress!== null) {
       // hide image
-      $("#image").removeClass("show");
-      $("#image").addClass("hide");
+      $("#image").removeClass("show").addClass("hide");
       // change font color
       $("#editable").removeClass("darken");
+      // change button position
+      $("#btn").removeClass("btn-moveDown");
       // clear image address
       $("#upload-img").val(null);
     }

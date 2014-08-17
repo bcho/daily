@@ -28,7 +28,7 @@
   </div>
   
   <!-- add background button -->
-  <div class="btn">
+  <div class="btn" id="btn">
     <!-- add background button -->
     <i class="btn-img-fake fa fa-picture-o"></i>
     <input class="btn-img" type="file" accept="image/jpg, image/jpeg, image/gif, image/png, image/bmp" id="upload-img"/>
@@ -45,6 +45,7 @@
   <script>
     var editor = new MediumEditor('.editable', {
       firstHeader: 'h3',
+      buttons: ['bold', 'italic', 'underline', 'anchor', 'header2', 'quote'],
     });
   </script>
 </body>
