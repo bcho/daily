@@ -28,7 +28,7 @@ body {
   height: 400px;
   line-height: 300px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   color: rgba(255,255,255,1);
 }
 
@@ -56,7 +56,7 @@ h3 {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   color: rgba(0,0,0,0.8);
 }
 
@@ -84,6 +84,12 @@ a {
 .btn {
   position: absolute;
   top: 100px;
+  left: 15%; 
+}
+
+.btn-moveDown {
+  position: absolute;
+  top: 522px!important;
   left: 15%; 
 }
 

@@ -18,6 +18,8 @@ $(document).ready(function(){
       $("#image").removeClass("hide").addClass("show");
       // change font color
       $("#editable").addClass("darken");
+      // change button position
+      $("#btn").addClass("btn-moveDown");
     }
   });
   // delete image
@@ -30,6 +32,8 @@ $(document).ready(function(){
       $("#image").removeClass("show").addClass("hide");
       // change font color
       $("#editable").removeClass("darken");
+      // change button position
+      $("#btn").removeClass("btn-moveDown");
       // clear image address
       $("#upload-img").val(null);
     }
