@@ -4,10 +4,11 @@
  * 
  */
 $(document).ready(function(){
+  window.URL = window.URL || window.webkitURL;
   // upload image
-  $("#upload-img").change(function() {
+  $("#upload-img").change(function(event) {
     // create temporary url
-    var tmppath = URL.createObjectURL(event.target.files[0]);
+    var tmppath = window.URL.createObjectURL(event.target.files[0]);
     var img_address = $(this).val();
     console.log(img_address);
     // if upload image
