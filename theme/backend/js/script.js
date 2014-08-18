@@ -18,6 +18,7 @@ $(document).ready(function(){
       $("#image").removeClass("hide").addClass("show");
       // change font color
       $("#editable").addClass("darken");
+      $("#title").addClass("darken-title");
       // change button position
       $("#btn").addClass("btn-moveDown");
     }
@@ -32,6 +33,7 @@ $(document).ready(function(){
       $("#image").removeClass("show").addClass("hide");
       // change font color
       $("#editable").removeClass("darken");
+      $("#title").removeClass("darken-title");
       // change button position
       $("#btn").removeClass("btn-moveDown");
       // clear image address

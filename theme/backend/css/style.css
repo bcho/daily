@@ -13,6 +13,32 @@ body {
   width: 70%;
 }
 
+.title {
+  display: block;
+  width: 65%;
+  margin: auto;
+  border: 0;
+  font-size: 36px;
+  line-height: 36px;
+  height: 36px;
+  color: #000;
+  background-color: rgba(255,255,255,0);
+}
+
+.darken-title {
+  display: block;
+  width: 65%;
+  margin: auto;
+  border: 0;
+  font-size: 36px;
+  line-height: 36px;
+  height: 36px;
+  padding-top: 132px;
+  padding-bottom: 232px;
+  background-color: rgba(255,255,255,0);
+  color: #fff;
+}
+
 .editable {
   margin: auto;
   width: 65%;
