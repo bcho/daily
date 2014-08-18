@@ -10,7 +10,6 @@ $(document).ready(function(){
     // create temporary url
     var tmpPath = window.URL.createObjectURL(event.target.files[0]);
     var imgAddress = $(this).val();
-    console.log(imgAddress);
     // if upload image
     if (imgAddress!== null) {
       // set background, show image
@@ -39,5 +38,9 @@ $(document).ready(function(){
       // clear image address
       $("#upload-img").val(null);
     }
+  });
+
+  editor = new MediumEditor('.editable', {
+    placeholder: 'Tell your story...'
   });
 });

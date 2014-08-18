@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Editor | Daily </title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="medium-editor/dist/css/medium-editor.min.css">
     <link rel="stylesheet" href="medium-editor/dist/css/themes/default.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/editor.css">
 </head>
 <body>
-    <div class="editor-container">
-        <header class="editor-header">
-            <div class="editor-title post-title" contenteditable>hello world</div>
-        </header>
-        <aside class="editor-toolbar"></aside>
-        <article class="editor-content post-content post-editor">foobar</article>
+    <!-- background -->
+    <div class="image hide" id="image">
+        <div class="overlay"></div>
+        <div class="background" id="background"></div>
+    </div>
+
+    <!-- content -->
+    <div class="container">
+        <input type="text" placeholder="Title" class="title" id="title" autocomplete="off">
+        <div class="editable" id="editable">
+        </div>
+    </div>
+      
+    <!-- add background button -->
+    <div class="btn" id="btn">
+        <!-- add background button -->
+        <i class="btn-img-fake fa fa-picture-o"></i>
+        <input class="btn-img" type="file" accept="image/jpg, image/jpeg, image/gif, image/png, image/bmp" id="upload-img"/>
+        <!-- delete background button -->
+        <a href="" class="btn-delete" id="btn-delete" ><i class="fa fa-times"></i></a>
     </div>
 </body>
+<script src="jquery/dist/jquery.min.js"></script>
 <script src="medium-editor/dist/js/medium-editor.min.js"></script>
-<script>
-    (function () {
-        var editorElem = document.querySelector('.post-editor'),
-            editor = new MediumEditor(editorElem);
-    })();
-</script>
+<script src="js/editor.js"></script>
 </html>

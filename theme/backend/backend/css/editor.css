@@ -1,3 +1,9 @@
+/*
+ * Daily Editor Theme
+ *
+ * author: @narutooturan
+ */
+
 *:focus {
   outline: none;
 }
@@ -19,8 +25,8 @@ body {
   margin: auto;
   border: 0;
   font-size: 36px;
-  line-height: 36px;
-  height: 36px;
+  line-height: 45px;
+  height: 45px;
   color: #000;
   background-color: rgba(255,255,255,0);
 }
@@ -41,8 +47,10 @@ body {
 
 .editable {
   margin: auto;
+  margin-top: 25px;
   width: 65%;
   min-height: 30px;
+  line-height: 1;
 }
 
 /** font style **/
